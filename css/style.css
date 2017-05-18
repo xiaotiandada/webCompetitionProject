@@ -1,0 +1,400 @@
+body{
+    margin: 0;
+    background: rgba(188, 187, 194, 0.14);
+}
+#nav{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    z-index: 6;
+    }
+#nav .navContentLogo h1{
+    position: absolute;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+#nav .navContentLogo img{
+    width: 150px;
+    float: left;
+    margin-top: 12px;
+}
+#nav .navContent{
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+}
+#nav .navContent ul{
+    width: 500px;
+    height: 60px;
+    margin: 0 0 0 344px;
+    padding: 0;
+    float: left;
+}
+#nav .navContent ul li{
+    list-style: none;
+}
+#nav .navContent ul li a {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;
+    position: relative;
+    cursor:pointer;
+}
+
+#nav .navContent ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #108ce5;
+    border-radius: 5px;
+    transition:all .8s;
+    opacity:1;
+    transform:rotateY(90deg);
+}
+#nav .navContent ul li a:hover::after{
+    opacity: 1;
+    transform: rotateY(180deg);
+}
+
+/*#nav .navContentInput {
+    width: 170px;
+    height: 60px;
+    float: left;
+}
+#nav .navContentInput input[type="text"]{
+    width: 170px;
+    height: 26px;
+    border: 1px solid #f5f5f5;
+    border-radius: 2px;
+    outline: none;
+    margin: 14px 0 0 116px;
+    letter-spacing: 1px;
+}
+#nav .navContentInput input[type="button"]{
+    width: 70px;
+    height: 30px;
+    border: 1px solid #1084d5;
+    border-radius: 3px;
+    color: #fff;
+    background: #1084d5;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+#nav .navContentInput input[type="button"]:hover{
+    background: #108ce5;
+}*/
+
+
+/*nav end*/
+#header{
+    position: relative;
+    width: 100%;
+}
+#header .headerContent{
+    width: 100%;
+    position: absolute;
+    top: 16%;
+    z-index: 5;
+}
+
+#header .headerContent h2{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 52px;
+    font-family: "Microsoft YaHei",sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+#header .headerContent p{
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Microsoft YaHei",sans-serif;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+#header .headerContent a{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Microsoft YaHei",sans-serif;
+    letter-spacing: 3px;
+    display: block;
+    width: 280px;
+    height: 70px;
+    background: #105da2;
+    border-radius: 4px;
+    line-height: 70px;
+    margin: 90px auto;
+}
+#header .headerContent a:hover{
+    background: #108ce5;
+}
+
+
+
+#project{
+    width: 100%;
+    height: 823px;
+    margin-top: 40px;
+}
+#project .projectContent{
+    width: 1000px;
+    height:416px;
+    margin: 0 auto;
+}
+#project .projectContent img{
+    width: 800px;
+    display: block;
+    margin: 10px auto;
+    transition:transform 0.5s;
+}
+#project .projectContent img:hover{
+    transform: scale(1.2,1.2);
+}
+
+#project .projectContentMain{
+    width: 1000px;
+    height: 350px;
+    margin-top: 30px;
+}
+#project .projectContentMainOne{
+    width: 240px;
+    height: 350px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px 1px rgba(0,0,0,.08);
+    box-shadow: 0 1px 4px 1px rgba(0,0,0,.08);
+    border-radius: 0;
+    border: none;
+    float: left;
+    margin: 24px 4px;
+}
+#project .projectContentMainOne:hover{
+    -webkit-box-shadow: 0 1px 4px 1px rgba(0,0,0,.08);
+    box-shadow: 0 1px 4px 4px rgba(0,0,0,.08);
+}
+#project .projectContentMainOne .projectContentMainOneImg{
+    width: 220px;
+    height: 280px;
+    overflow: hidden;
+    margin: -16px auto 0 auto;
+}
+#project .projectContentMainOne .projectContentMainOneImg img{
+    width: 220px;
+    height: 280px;
+    transition:transform 0.5s;
+}
+#project .projectContentMainOne img:hover{
+    transform: scale(1.2,1.2);
+}
+#project .projectContentMainOne h3 {
+    color: #333;
+    font-size: 14px;
+    margin: 8px;
+    font-family: "Microsoft YaHei",sans-serif;
+}
+
+#project .projectContentMainOne p{
+    cursor: pointer;
+    font-size: 12px;
+    overflow: hidden;
+    color: #7F7F7E;
+    letter-spacing: 1px;
+    margin: 8px;
+    font-family: "Microsoft YaHei",sans-serif;
+}
+
+#operationService{
+    width: 100%;
+    height: 260px;
+    background: url(../images/operationService.png);
+    margin-top: 60px;
+}
+#operationService .operationServiceContent {
+    width: 1000px;
+    height: 260px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+
+
+#operationService .operationServiceContent h2{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: "Microsoft YaHei",sans-serif;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+#operationService .operationServiceContentDecorative {
+    width: 500px;
+    height: 1px;
+    background: #fff;
+    margin:0 auto;
+}
+
+#operationService .operationServiceContent p{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Microsoft YaHei",sans-serif;
+    letter-spacing: 2px;
+    line-height: 26px;
+}
+#operationService .operationServiceContent a{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Microsoft YaHei",sans-serif;
+    letter-spacing: 3px;
+    display: block;
+    width: 240px;
+    height: 56px;
+    background: #105da2;
+    border-radius: 4px;
+    line-height: 56px;
+    margin: 20px auto;
+}
+#operationService .operationServiceContent a:hover{
+    background: #108ce5;
+}
+
+#introduction{
+    width: 1000px;
+    height: 300px;
+    background: #fff;
+    margin: -30px auto;
+    -webkit-box-shadow: 0 1px 4px 1px rgba(0,0,0,.08);
+    box-shadow: 0 1px 4px 1px rgba(0,0,0,.08);
+    border-radius: 0;
+    border: none;
+}
+#introduction img{
+    width: 440px;
+    margin: 12px 0 0 12px;
+    float: left;
+}
+#introduction .introductionText{
+    width: 460px;
+    height: 300px;
+    float: right;
+    margin-right: 20px;
+}
+
+
+
+#introduction .introductionText h2 {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 24px 0 0 0;
+    font-family: "Microsoft YaHei",sans-serif;
+}
+#introduction .introductionText h3 {
+    color: #333;
+    font-size: 16px;
+    margin: 20px 0 0 0;
+    font-family: "Microsoft YaHei",sans-serif;
+}
+#introduction .introductionText p{
+    cursor: pointer;
+    font-size: 16px;
+    overflow: hidden;
+    color: #7F7F7E;
+    letter-spacing: 1px;
+    margin: 16px 0 0 0;
+    text-indent: 2em;
+    font-family: "Microsoft YaHei",sans-serif;
+}
+
+#introduction .introductionText a{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Microsoft YaHei",sans-serif;
+    letter-spacing: 3px;
+    display: block;
+    width: 180px;
+    height: 40px;
+    background: #105da2;
+    border-radius: 4px;
+    line-height: 40px;
+    float: right;
+    margin: 20px 20px 0 0;
+}
+#introduction .introductionText a:hover{
+    background: #108ce5;
+}
+#footer {
+    width: 100%;
+    height: 240px;
+    margin-top: 60px;
+    background: #373d41;
+}
+
+#footer .footerLink{
+    width: 1000px;
+    height: 240px;
+    margin:0 auto;
+}
+
+#footer .footerLinkUl{
+    float: left;
+    width: 200px;
+    height: 240px;
+}
+#footer .footerLinkUl h3{
+    color: #d7d8d9;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-size: 16px;
+    font-family: "Microsoft YaHei",sans-serif;
+}
+#footer .footerLinkUl ul li{
+    list-style: none;
+    text-align: center;
+    line-height: 30px;
+}
+#footer .footerLinkUl ul li a{
+    color: #9b9ea0;
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;
+}
+#footer .footerLinkUl ul li a:hover{
+    color: #00c1de;
+}
+.both{
+    width: 0;
+    height: 0;
+    display: table;
+    clear: both;
+}
+#footerRight{
+    width: 100%;
+    height: 50px;
+    background: #373d41;
+    overflow: hidden;
+}
+#footerRight p{
+    text-align: center;
+    color: #d7d8d9;
+    border-top: 1px solid #4b5054;
+    line-height: 50px;
+}
